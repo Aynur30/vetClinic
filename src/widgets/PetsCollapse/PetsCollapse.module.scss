@@ -1,0 +1,66 @@
+@import "../../styles/variables.scss";
+
+.ant-collapse {
+  width: 280px;
+  border-radius: 3px;
+  background-color: $white;
+
+  :global {
+    .ant-collapse-item {
+      min-height: 45px;
+      text-align: center;
+
+      .ant-collapse-header {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        font-size: 12px;
+        border-radius: 3px;
+      }
+
+      .ant-collapse-header-active {
+        border: 1px solid rgba(84, 150, 212, 0.01);
+        background-color: rgba(84, 150, 212, 0.2);
+      }
+
+      .ant-collapse-content {
+        background-color: $white;
+
+        .ant-collapse-content-box {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+.collapse-img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 5px;
+  left: 10px;
+  border-radius: 50%;
+}
+
+.collapse-img-active {
+  border: 2px solid rgba(46, 117, 183, 1);
+}
+
+.ant-collapse-dark {
+  background-color: $darkTheme;
+
+  :global {
+    .ant-collapse-item {
+      .ant-collapse-header-text {
+        color: $white;
+      }
+
+      .ant-collapse-content {
+        background-color: $darkTheme;
+      }
+    }
+  }
+}

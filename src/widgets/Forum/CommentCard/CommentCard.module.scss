@@ -1,0 +1,70 @@
+@import '../../../styles/variables.scss';
+
+.comment_card {
+  // margin-left: -100px;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  width: 1190px;
+  height: 240px;
+  background-color: red;
+  &__image_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25%;
+    background-color: $greyLight;
+    img {
+      margin-top: 15px;
+    }
+    a {
+      font-size: 18px;
+      margin-top: 12px;
+      text-decoration: underline;
+    }
+  }
+  &__content_container {
+    z-index: 999;
+
+    position: relative;
+    padding: 30px;
+    width: 75%;
+    background-color: #fff;
+    font-size: 12px;
+
+    &__date {
+      color: rgba(131, 134, 136, 1);
+      margin-top: 10px;
+    }
+    &__content {
+      color: rgba(58, 64, 69, 1);
+      width: 85%;
+      word-wrap: break-word
+    }
+  }
+  &__content_container::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    width: 66px;
+    height: 66px;
+    background-color: #fff;
+    rotate: 45deg;
+    z-index: -1;
+  }
+}
+
+.underline {
+  width: 100%;
+  margin-top: 3px;
+  margin-bottom: 25px;
+  height: 2px;
+  background-color: rgb(197, 197, 197);
+}
+
+.likes_container {
+  position: absolute;
+  right: 100px;
+  bottom: 30px;
+}

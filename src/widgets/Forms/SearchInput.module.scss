@@ -1,0 +1,22 @@
+.searchForm {
+    position: relative;
+}
+
+.searchInput {
+    width: 719px;
+    height: 27px;
+    border-radius: 16px;
+    background: #DEE6EC;
+    padding-left: 15px;
+}
+
+.searchForm::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    width: 17px;
+    height: 17px;
+    background: url('../../assets/icons/search.svg') center/contain no-repeat;
+  }

@@ -1,0 +1,121 @@
+@import "../../styles/variables.scss";
+
+.container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 6;
+  background: $whiteish;
+  transform: translateX(-100%);
+  transition: 0.3s all;
+  .profile {
+    height: fit-content;
+    padding: 20px;
+    background: url("../../assets/icons/mobile-menu-background.svg") no-repeat
+      top;
+    background-size: cover;
+    .btn-back {
+      height: fit-content;
+      width: fit-content;
+      position: relative;
+      padding: 5px;
+      padding-left: 25px;
+      text-align: center;
+      font-family: Inter, sans-serif;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      &::before {
+        position: absolute;
+        left: 2px;
+        top: 35%;
+        content: "";
+        width: 8px;
+        height: 8px;
+        transform: rotate(135deg);
+        border: solid 1px $inverse-greyLightest;
+        border-top: none;
+        border-left: none;
+      }
+    }
+  }
+  .auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    .icon {
+      background: $whiteish
+        url("../../assets/icons/mobile-menu-profile-unauth.svg") no-repeat
+        center;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+    .username {
+      color: $greyDark;
+      text-align: center;
+      font-family: Inter, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  .link-list {
+    padding-bottom: 50px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 5%;
+      bottom: 87px;
+      height: 1px;
+      width: 90%;
+      border-bottom: 1px solid $greyLight;
+    }
+    .listItem {
+      padding: 11px 30px;
+      border-left: 2px solid transparent;
+    }
+  }
+  .mobile-footer {
+    padding: 20px 30px;
+    .btn-logout {
+      padding: 5px 0px;
+      position: relative;
+      color: $danger;
+      text-align: center;
+      font-family: Inter, sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-left: 30px;
+      &::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        top: 2px;
+        background: url("../../assets/icons/logout.svg") no-repeat center;
+      }
+    }
+  }
+}
+
+.active {
+  background-color: rgba(84, 150, 212, 0.2);
+  // border-left: 2px solid $blue-border !important;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 16px;
+  color: $greyDark;
+  transition: 0.3s;
+}

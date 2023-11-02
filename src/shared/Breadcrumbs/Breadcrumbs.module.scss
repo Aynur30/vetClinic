@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+
+.breadcrumbs {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    background-color: rgba(84, 150, 212, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.breadcrumbs .crumb::after {
+    content: '>';
+    margin-left: 10px;
+}
+
+.breadcrumbs .crumb:last-child::after {
+    display: none;
+}
+
+.crumb a {
+    font-size: 11px;
+    line-height: 18px;
+    text-decoration: none;
+    color: $greyDark;
+}
+
+.crumb::first-letter {
+    text-transform: uppercase;
+}

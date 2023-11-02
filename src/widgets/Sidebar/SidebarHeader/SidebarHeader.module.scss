@@ -1,0 +1,30 @@
+@import "../../../styles/variables.scss";
+
+.sidebar_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 300px;
+  background-color: rgba(22, 118, 243, 1);
+  color: #fff;
+  &__text {
+    font-size: 12px;
+    font-weight: 600;
+    width: 85%;
+    text-align: center;
+    cursor: default;
+  }
+  &__button {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-image: url("/src/assets/icons/plus.svg");
+    cursor: pointer;
+  }
+}
+
+.inverse-background {
+  background-color: $inverse-blue;
+  color: $inverse-default;
+}

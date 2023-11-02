@@ -1,0 +1,131 @@
+@import "../../../styles/variables.scss";
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 960px;
+  min-height: 658px;
+  box-sizing: border-box;
+
+  @media (max-width: 360px) {
+    gap: 40px;
+    width: 360px;
+    align-items: center;
+    padding: 0 67px 70px 67px;
+  }
+}
+
+.heading {
+  color: $grey;
+  font-size: 40px;
+  line-height: 54px;
+  font-weight: 700;
+  max-width: 400px;
+
+  @media (max-width: 360px) {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+.inverse-heading {
+    color: $inverse-grey;
+  }
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 50px;
+  column-gap: 50px;
+
+  @media (max-width: 360px) {
+    grid-template-columns: 1fr;
+    row-gap: 48px;
+    column-gap: none;
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  width: 204px;
+  height: 150px;
+  border-radius: 7px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+  padding: 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0 0 25px rgba(34, 60, 80, 0.2);
+  }
+}
+
+.card-animal {
+  border: solid 2px $greyLight;
+  background-color: $white;
+}
+
+.inverse-card-animal {
+  border: solid 2px $white;
+  background-color: $greyText;
+  &:hover {
+    box-shadow: 0 0 25px $inverse-greyLightest;
+  }
+}
+
+.card-info {
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  background-color: $grey;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.inverse-card-info {
+  border: solid 2px $white;
+  color: $inverse-greyLightest;
+  background-color: $greyLight;
+  &:hover {
+    box-shadow: 0 0 25px $inverse-greyLightest;
+  }
+}
+
+.name {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.image {
+    position: absolute;
+    width: 85px;
+    height: auto;
+    bottom: 10px;
+    right: 8px;
+    z-index: 2;
+}
+
+.index {
+    position: absolute;
+    font-size: 64px;
+    line-height: 87px;
+    font-weight: 700;
+    top: -7px;
+    left: 7px;
+    color: $greyLight;
+}
+
+.inverse-index {
+    color: $greyLight;
+    text-shadow: 0 0 10px $inverse-grey;
+}

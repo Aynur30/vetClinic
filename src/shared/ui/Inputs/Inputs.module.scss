@@ -1,0 +1,118 @@
+@import "../../../styles/variables.scss";
+
+$blue:rgba(22, 118, 243, 1);
+$grey:rgba(28, 55, 90, 0.16);
+
+.wrapper {
+    position: relative;
+    display:  flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    &__label {
+        color: $blue;
+        margin-bottom: 5px;
+        font-size: 12px;
+        line-height: 16px;
+        transition: 0.3s ease-in-out;
+    }
+    &__input {
+        border: 1px solid $grey;
+        padding: 17px 15px;
+        border-radius: 3px;
+        outline-color: $grey;
+        transition: outline-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        padding-right: 55px;
+        &:hover {
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        &:focus {
+            outline-color: $blue;
+        }
+    }
+    &__button {
+        position: absolute;
+        top: 35px;
+        right: 10px;
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+    }
+}
+
+.checkboxWrapper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    &__input {
+        position: relative;
+        border: none;
+        border-radius: 4px;
+        background: $inverse-greyLight;
+        cursor: pointer;
+        line-height: 0;
+        outline: 0;
+        padding: 0 !important;
+        vertical-align: text-top;
+        height: 18px;
+        width: 18px;
+        -webkit-appearance: none;
+        opacity: .5;
+        transition: 0.5s;
+        &:hover {
+            opacity: 1;
+        }
+        &:checked {
+            background-color:$blue;
+            opacity: 1;
+        }
+        &:checked::before {
+            content: '';
+            position: absolute;
+            right: 50%;
+            top: 50%;
+            width: 8px;
+            height: 6px;
+            background-image: url('../Inputs//Shape.svg');
+            transform: translate(50%, -50%);
+          }
+    }
+    &__label {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+.RadioButtonWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &__input {
+        position: relative;
+        border: none;
+        border-radius: 50%;
+        background: $grey;
+        cursor: pointer;
+        line-height: 0;
+        outline: 0;
+        padding: 0 !important;
+        height: 30px;
+        width: 30px;
+        -webkit-appearance: none;
+        opacity: .5;
+        transition: 0.5s;
+        &:hover {
+            opacity: 1;
+        }
+        &:checked {
+            background-color:$blue;
+            opacity: 1;
+        }
+    }
+    &__label {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+

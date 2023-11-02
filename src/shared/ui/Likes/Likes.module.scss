@@ -1,0 +1,25 @@
+.likes_container {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  button {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  span {
+    margin-left: 5px;
+  }
+}
+
+.like {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.dislike {
+  display: flex;
+  margin-top: 7px;
+}

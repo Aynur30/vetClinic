@@ -1,0 +1,22 @@
+.container {
+  padding-left: 18px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .label {
+      color: #000;
+      font-family: "Open Sans";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}

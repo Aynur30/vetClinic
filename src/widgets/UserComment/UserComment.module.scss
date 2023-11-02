@@ -1,0 +1,27 @@
+.wrapper {
+  width: 1190px;
+  .comment {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1.5em;
+    &__field {
+      resize: none;
+      border: 1px solid rgba(45, 57, 76, 0.1);
+      
+      font-family: Helvetica;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding: 1.5em 2em;
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  .submit {
+    padding-top: 15px;
+    display: flex;
+    justify-content: end;
+  }
+}

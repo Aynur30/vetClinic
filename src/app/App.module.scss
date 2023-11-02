@@ -1,0 +1,23 @@
+@import "../styles/variables.scss";
+
+.container {
+  position: relative;
+}
+.theme {
+  display: flex;
+  margin: 0;
+  gap: 5px;
+  &__text {
+    margin: 0;
+  }
+}
+
+.light {
+  background-color: $white;
+  transition: 0.3s;
+}
+
+.dark {
+  background-color: $darkTheme;
+  transition: 0.3s;
+}

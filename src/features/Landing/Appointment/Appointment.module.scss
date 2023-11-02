@@ -1,0 +1,85 @@
+@import "../../../styles/variables.scss";
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 960px;
+  min-height: 658px;
+  margin: 50px 0 0;
+  background-image: url(../../../assets/images/animals.png);
+  background-size: 600px 495px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    background-size: 75%;
+    background-position: center;
+    justify-content: flex-end;
+    align-items: center;
+    margin: -70px auto 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-base {
+    width: 100%;
+    min-height: 658px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(5, 1, 49, 0.39);
+    padding: 0 0 20px 0;
+  }
+}
+
+.text {
+  color: $grey;
+  font-size: 40px;
+  line-height: 54px;
+  font-weight: 700;
+  max-width: 308px;
+}
+
+@media (max-width: 480px) {
+  .text {
+    color: #FFFFFF;
+    margin: 0 auto;
+  }
+}
+
+.inverse-text {
+  color: $inverse-grey;
+}
+
+.text-selected {
+  color: $pink;
+  font-size: 40px;
+  line-height: 54px;
+  font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  .text-selected {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FAE1BB;
+    margin: 0 auto;
+  }
+}
+
+.inverse-text-selected {
+  color: $inverse-pink;
+}
+
+.button {
+  width: 318px;
+  height: auto;
+  background-color: $blue;
+  color: $white;
+}

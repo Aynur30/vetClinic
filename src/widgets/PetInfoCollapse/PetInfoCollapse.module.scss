@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.collapse {
+  div {
+    div:nth-child(1) {
+      color: $white !important;
+      background-color: $blue;
+      span {
+        order: -1;
+      }
+    }
+    div:nth-child(2) {
+      div {
+        color: $inverse-default !important;
+        background-color: $white !important;
+        padding-top: 16px !important;
+        div {
+          padding-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.arrow {
+  transition: all 0.25s ease-in-out;
+}

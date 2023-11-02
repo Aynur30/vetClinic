@@ -1,0 +1,155 @@
+.wrapper {
+    width: 287px;
+    min-height: 1124px;
+    background: #5496D4;
+    padding: 56px 0 0 34px;
+    z-index: -1;
+}
+
+.title {
+    margin-bottom: 56px;
+    height: 45px;
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    vertical-align: baseline;
+}
+
+.title::before {
+    content: "";
+    display: inline-block;
+    width: 37px;
+    height: 45px;
+    background-image: url('../../../assets/icons/DashboardLogo.svg');
+    background-size: cover;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.first_list {
+    color: #FFF;
+    margin-bottom: 46px;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    vertical-align: bottom;
+}
+
+.icon_home::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    background-image: url('../../../assets/icons/icon-home.svg');
+    background-size: cover;
+    margin-right: 17px;
+    vertical-align: baseline;
+}
+.icon_profile::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    background-image: url('../../../assets/icons/icon-profile.svg');
+    background-size: cover;
+    margin-right: 17px;
+    vertical-align: baseline;
+}
+
+.icon_msg::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    background-image: url('../../../assets/icons/icon-msg.svg');
+    background-size: cover;
+    margin-right: 17px;
+    vertical-align: baseline;
+}
+
+.icon_history::before {
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url('../../../assets/icons/icon-history.svg');
+    background-size: cover;
+    margin-right: 17px;
+    vertical-align: baseline;
+}
+
+
+.icon_tasks::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 24px;
+    background-image: url('../../../assets/icons/icon-tasks.svg');
+    background-size: cover;
+    margin-right: 17px;
+    vertical-align: baseline;
+}
+
+.icon_comments::before {
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 20px;
+    background-image: url('../../../assets/icons/icon-communities.svg');
+    background-size: cover;
+    margin-right: 17px;
+    vertical-align: baseline;
+}
+
+.first_list li {
+    margin-bottom: 18px;
+}
+
+.second_list {
+    color: #FFF;
+}
+
+.icon_settings::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 23px;
+    background-image: url('../../../assets/icons/icon-setting.svg');
+    background-size: cover;
+    margin-right: 17px;
+    vertical-align: baseline;
+}
+
+.icon_support::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 23px;
+    background-image: url('../../../assets/icons/icon-support.svg');
+    background-size: cover;
+    margin-right: 17px;
+    vertical-align: baseline;
+}
+
+.icon_privacy::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 25px;
+    background-image: url('../../../assets/icons/icon-privacy.svg');
+    background-size: cover;
+    margin-right: 17px;
+    vertical-align: baseline;
+}
+
+.second_list li {
+    margin-bottom: 18px;
+}

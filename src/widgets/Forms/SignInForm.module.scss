@@ -1,0 +1,69 @@
+$colorMain: #1676F3;
+$colorTitle: #1A293D;
+
+.wrap_signIn{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+    &h4{
+        font-weight: 400;
+        font-size: 13px; 
+    }
+}
+
+.title_signIn{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    & h2, h3{
+        margin: 0px;
+    }
+    & h2{
+        font-weight: 600;
+        font-size: 22px;
+    }
+    & h3{
+        font-weight: 400;
+        color: $colorTitle;
+        font-size: 14px; 
+    }
+}
+
+.checkbox_conteiner{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 15.86px;
+}
+
+.checkbox_text{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.btn_signIn{
+    cursor: pointer;
+    width: 336px;
+    height: 56px;
+    border-radius: 4px;
+    background-color: $colorMain;
+    border: none;
+    color: white;
+}
+
+.link_text {
+  margin-top: 2%;
+  font-weight: normal;
+}
+
+.link {
+  cursor: pointer;
+  color: $colorMain;
+  text-decoration: none;
+}

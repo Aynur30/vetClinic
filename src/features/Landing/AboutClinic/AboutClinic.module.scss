@@ -1,0 +1,97 @@
+@import "../../../styles/variables.scss";
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 450px;
+  grid-template-rows: 1fr 1fr 1fr auto auto 1fr;
+  flex-direction: column;
+  gap: 20px;
+  width: 960px;
+  min-height: 658px;
+  margin-bottom: 70px;
+  color: $inverse-greyLightest;
+}
+
+.heading {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 600;
+  max-width: 450px;
+}
+
+.about {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.history-name {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.history-text {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.read-more {
+  cursor: pointer;
+  justify-self: end;
+  color: $lightest-blue;
+}
+
+.inverse-read-more {
+  cursor: pointer;
+  justify-self: end;
+  color: $inverse-lightest-blue;
+}
+
+.image {
+  align-self: self-end;
+  width: 450px;
+  height: 538px;
+  grid-column: 2/3;
+  grid-row: 1/7;
+}
+
+.facts-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.fact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fact-numbers {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    color: $lightest-blue;
+}
+
+.inverse-fact-numbers {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    color: $inverse-lightest-blue;
+}
+
+.fact-description {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.inverse-heading {
+    color: $greyLight;
+  }

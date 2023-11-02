@@ -1,0 +1,95 @@
+@import "../../../styles/variables.scss";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  justify-content: space-between;
+  height: 63px;
+
+  &__row {
+    display: flex;
+    column-gap: 6px;
+  }
+
+  &__item {
+    border: 1px solid black;
+    font-size: 10px;
+    width: 60px;
+    height: 25px;
+  }
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1060px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #fefefe;
+  box-shadow: 0px 5px 20px 0px #12263f0d inset;
+  padding: 10px 20px;
+  margin-bottom: 7px;
+  border: 1px solid #fefefe;
+  border-radius: 3px;
+
+  &__dark {
+    background-color: $darkTheme;
+    box-shadow: 0px 0px 10px 0px $white inset;
+  }
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: $medium-blue;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+
+  &__dark {
+    color: $white;
+  }
+}
+
+.topic-info {
+  display: flex;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+}
+
+.topic-info div::before {
+  content: "";
+  display: block;
+  height: 20px;
+  width: 1.5px;
+  margin-right: 20px;
+  margin-left: 5px;
+  background-color: $greyLight;
+}
+
+.topic-image {
+  margin-right: 10px;
+}
